@@ -1,0 +1,40 @@
+|--- share_long <= 0.25
+|   |--- share_medium <= 0.30
+|   |   |--- share_medium <= 0.22
+|   |   |   |--- share_long <= 0.16
+|   |   |   |   |--- class: sjf_32
+|   |   |   |--- share_long >  0.16
+|   |   |   |   |--- class: sjf_32
+|   |   |--- share_medium >  0.22
+|   |   |   |--- n_queries <= 90.50
+|   |   |   |   |--- class: sjf_32
+|   |   |   |--- n_queries >  90.50
+|   |   |   |   |--- class: sjf_8
+|   |--- share_medium >  0.30
+|   |   |--- n_queries <= 54.50
+|   |   |   |--- share_medium <= 0.45
+|   |   |   |   |--- class: sjf_32
+|   |   |   |--- share_medium >  0.45
+|   |   |   |   |--- class: sjf_8
+|   |   |--- n_queries >  54.50
+|   |   |   |--- share_medium <= 0.36
+|   |   |   |   |--- class: sjf_8
+|   |   |   |--- share_medium >  0.36
+|   |   |   |   |--- class: sjf_8
+|--- share_long >  0.25
+|   |--- n_queries <= 47.50
+|   |   |--- share_medium <= 0.12
+|   |   |   |--- class: sjf_32
+|   |   |--- share_medium >  0.12
+|   |   |   |--- share_long <= 0.42
+|   |   |   |   |--- class: sjf_8
+|   |   |   |--- share_long >  0.42
+|   |   |   |   |--- class: sjf_8
+|   |--- n_queries >  47.50
+|   |   |--- share_medium <= 0.05
+|   |   |   |--- class: sjf_8
+|   |   |--- share_medium >  0.05
+|   |   |   |--- arrival_rate <= 0.95
+|   |   |   |   |--- class: sjf_8
+|   |   |   |--- arrival_rate >  0.95
+|   |   |   |   |--- class: sjf_8

@@ -1,0 +1,4 @@
+|--- share_long <= 0.06
+|   |--- class: sjf_32
+|--- share_long >  0.06
+|   |--- class: fcfs_8
